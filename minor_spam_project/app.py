@@ -13,8 +13,12 @@ nltk.download('stopwords', download_dir=nltk_data_path)
 nltk.download('punkt', download_dir=nltk_data_path)
 nltk.download('punkt_tab', download_dir=nltk_data_path)
 
-model = joblib.load("spam_model.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+model = joblib.load(os.path.join(BASE_DIR, "spam_model.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "tfidf_vectorizer.pkl"))
 stop_words = set(stopwords.words('english'))
 
 def clean_text(text):

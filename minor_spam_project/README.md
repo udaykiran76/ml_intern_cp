@@ -1,6 +1,7 @@
 # 📧 Spam Email Classifier
 
 **Minor Capstone Project — Machine Learning with Python Internship**
+
 **Author:** Reddy Uday Kiran Reddy
 
 🔗 **Live Demo:** https://spamemailclassifiermp.streamlit.app/
